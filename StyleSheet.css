@@ -1,0 +1,57 @@
+﻿.header
+{ 
+    height:436;
+    width:1332px;
+}
+
+
+.menu
+{
+ background-color:Black;
+ color:White;
+    height: 35px;
+    width: 1336px;
+}
+
+.content
+{width: 1241px;
+    background-color: white;
+}
+
+.footer
+{background-color:Black;
+ color:White;
+    width: 1336px;
+    height: 77px;
+   
+}
+
+.hover1:hover{
+    background-color:lightpink;
+    color:red;
+    padding:7px 10px;
+}
+.hover1{
+    transition:0.4s;
+    color:aqua;
+    font-size:20px;
+    text-decoration:none;
+    padding:0 10px;
+    margin:0 10px;
+    font-family: Monotype Corsiva;
+
+}
+.tb {
+    width: 409px;
+    margin: 153px 0px 0px 364px;
+    border-style: inset;
+    border-color: black;
+    color: black;
+    background-color: #9966FF;
+}
+.main1 {
+    background-repeat: no-repeat;
+    
+    
+    width: -webkit-fill-available;
+}

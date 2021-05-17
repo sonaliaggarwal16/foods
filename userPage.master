@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <style type="text/css">
+         .auto-style4 {
+            border: thick double #000000;
+            width: 1240px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        .auto-style5 {
+            color: #FFFFFF;
+        }
+        .menu {
+            background-color: #CCCCCC;
+            height: 35px;
+        }
+        .contentr {
+            background-color: #999999;
+        }
+        .footer
+{background-color:Black;
+ color:White;
+    width: 1336px;
+    height: 77px;
+   
+}
+        .auto-style7 {
+           width: 340px;
+       }
+       .auto-style8 {
+           color: White;
+           width: 1336px;
+           height: 77px;
+           text-align: center;
+           background-color: #CCCCCC;
+       }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+
+     <div class="header">
+
+             <h1><marquee style="background-color: #CCCCCC">100% Commission FREE website, Helping support your local takeaways</marquee></h1>
+           <table>
+                <tr>
+                    <td class="auto-style7">
+                       <asp:Image ID="Image2" runat="server" ImageUrl="~/img1/download (15).jpg" style="background-color: #660033" /></td>
+                   
+
+                        <td class="auto-style4">
+                            <h1 class="auto-style5" style="background-color: #CCCCCC">Aggarwal Foods</h1>
+                    </td>
+                            </tr>
+                        </table> 
+
+        </div>
+
+
+    <div class="menu">
+    
+        <asp:LinkButton ID="lbtnhome" runat="server" Font-underline="false" fontface="arial"
+            ForeColor="white" CssClass=hover1>HOME</asp:LinkButton>
+
+&nbsp;&nbsp; |
+
+<asp:LinkButton ID="lbtnproduct" runat="server" Font-underline="false" 
+            ForeColor="white" CssClass=hover1 OnClick="lbtnproduct_Click" >Product</asp:LinkButton>
+
+<asp:LinkButton ID="lbtncart" runat="server" Font-underline="false" 
+            ForeColor="white" CssClass=hover1 OnClick="lbtncart_Click">CART</asp:LinkButton>
+
+        ||&nbsp;&nbsp;&nbsp; <asp:LinkButton ID="lbtnregister" runat="server" 
+            Font-underline="false" ForeColor="white"   CssClass=hover1 OnClick="lbtnregister_Click1" >REGISTER</asp:LinkButton>
+
+&nbsp;|&nbsp; 
+        <asp:LinkButton ID="lbtnaboutus" runat="server" Font-underline="false" 
+            ForeColor="white"   CssClass=hover1 OnClick="lbtnaboutus_Click" >ABOUT US</asp:LinkButton>
+
+        <asp:LinkButton ID="lbtlogin" runat="server" style="color: #FFFFFF; font-size: large;"  cssclass="hover1" OnClick="lbtlogin_Click">LOGIN</asp:LinkButton>
+
+&nbsp;| <asp:LinkButton ID="lbtnlogout" runat="server" Font-underline="false" 
+            ForeColor="white"   CssClass=hover1 OnClick="lbtnlogout_Click1">LOGOUT</asp:LinkButton>
+
+&nbsp;|
+        <asp:LinkButton ID="lbtncustomer" runat="server" style="color: #FFFFFF; font-size: medium;" cssclass="hover1" OnClick="lbtncustomer_Click"></asp:LinkButton>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             </div>
+       
+
+&nbsp;</div>
+        
+
+         <tr>
+                    <td style="width: 139px" rowspan="2">
+                        &nbsp;&nbsp;
+                        </td>
+
+    <div class="content">
+
+
+       
+  
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+   <div class="auto-style8">
+ Terms & Conditions  copyright © 2019  @Aggarwal foods.com
+           
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>
